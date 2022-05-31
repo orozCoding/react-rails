@@ -60,7 +60,7 @@ const HelloWorld = (prop) => {
         : (
           <p>
             No greetings yet. Please open the Rails console and create/add a greeting by running
-            &quot;Greeting.create(text: your_text)&quot;
+            &quot;Greeting.create(text: &quot;your_text&quot;)&quot;
           </p>
         )}
 
