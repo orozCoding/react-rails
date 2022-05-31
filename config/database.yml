@@ -60,7 +60,7 @@ development:
 test:
   <<: *default
   database: react_rails_test
-    username: amigo
+  username: amigo
   password: quieropass
 
 # As with config/credentials.yml, you never want to store sensitive information,
