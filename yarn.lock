@@ -2359,8 +2359,6 @@
     "path-is-absolute" "^1.0.0"
     "readdirp" "^2.2.1"
     "upath" "^1.1.1"
-  optionalDependencies:
-    "fsevents" "^1.2.7"
 
 "chokidar@^3.4.1":
   "integrity" "sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw=="
@@ -2374,8 +2372,6 @@
     "is-glob" "~4.0.1"
     "normalize-path" "~3.0.0"
     "readdirp" "~3.6.0"
-  optionalDependencies:
-    "fsevents" "~2.3.2"
 
 "chokidar@>=3.0.0 <4.0.0":
   "integrity" "sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw=="
@@ -2389,8 +2385,6 @@
     "is-glob" "~4.0.1"
     "normalize-path" "~3.0.0"
     "readdirp" "~3.6.0"
-  optionalDependencies:
-    "fsevents" "~2.3.2"
 
 "chownr@^1.1.1":
   "integrity" "sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg=="
