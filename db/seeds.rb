@@ -8,5 +8,5 @@
 Greeting.create(text: 'Hello Sir')
 Greeting.create(text: 'Hello, second greeting')
 Greeting.create(text: 'Another greeting!')
-Greeting.create(text: "Welcome back")
+Greeting.create(text: 'Welcome back')
 Greeting.create(text: 'Feel like in home!')
