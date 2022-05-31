@@ -4,14 +4,32 @@ import { connect } from "react-redux"
 import { createStructuredSelector } from "reselect"
 
 const GET_THINGS_REQUEST = 'GET_THINGS_REQUEST'
+const GET_THINGS_SUCCESS = 'GET_THINGS_SUCCESS'
+
+// const getThings = () => {
+//   console.log('getting things action');
+//   return {
+//     type: GET_THINGS_REQUEST
+//   }
+// }
 
 const getThings = () => {
   console.log('getting things action');
-  return {
-    type: GET_THINGS_REQUEST
+  return dispatch => {
+    dispatch({ type: GET_THINGS_REQUEST});
+    return fetch('v1/things.json')
+    .then(resp => resp.json())
+    .then(json => dispatch(getThingsSuccess(json)))
+    .catch(error => console.log(error));
   }
 }
 
+const getThingsSuccess = (json) => {
+  return {
+    type: GET_THINGS_SUCCESS,
+    json
+  }
+}
 
 
 class HelloWorld extends React.Component {
@@ -44,3 +62,4 @@ HelloWorld.propTypes = {
 };
 
 export default connect(structuredSelector, mapDispatchToProps)(HelloWorld);
+export { getThingsSuccess }
