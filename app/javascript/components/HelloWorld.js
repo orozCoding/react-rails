@@ -16,12 +16,18 @@ const getThings = () => {
 
 class HelloWorld extends React.Component {
   render () {
+    const { things } = this.props;
+    const thingList = things.map((thing) => {
+      return <li>{thing.name} {thing.guid}</li>
+    })
     return (
       <React.Fragment>
       Greeting: {this.props.greeting}
       <button className="button" onClick = { () => {
         this.props.getThings()
       }}>Get Things</button>
+      <br />
+      <ul>{thingList}</ul>
       </React.Fragment>
     );
   }
