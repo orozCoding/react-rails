@@ -12,8 +12,7 @@ const App = () => {
     <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" render={() => <div>'Hello'</div>} />
-            <Route path="/hello" element={<HelloWorld greeting="Here I am!" />} />
+            <Route exact path="/" element={<HelloWorld greeting="Here I am!" things={store.things}/>} />
           </Routes>
         </BrowserRouter>
        </Provider> 
