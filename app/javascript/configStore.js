@@ -1,4 +1,4 @@
-import { configStore } from 'redux'
+import { createStore } from 'redux';
 
 const initialState = {
   things: []
@@ -12,7 +12,9 @@ function rootReducer(state, action) {
   }
 }
 
-export default theStore = () => {
-  const store = configStore(rootReducer, initialState);
+const theStore = () => {
+  const store = createStore(rootReducer, initialState);
   return store
 }
+
+export default theStore;

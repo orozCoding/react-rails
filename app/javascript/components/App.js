@@ -7,19 +7,17 @@ import theStore from '../configStore'
 
 const store = theStore();
 
-class App extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
+const App = () => {
+  return (
+    <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" render={() => (<div>'Hello'</div>)} />
+            <Route exact path="/" render={() => <div>'Hello'</div>} />
             <Route path="/hello" element={<HelloWorld greeting="Here I am!" />} />
           </Routes>
         </BrowserRouter>
-      </Provider>
+       </Provider> 
     );
-  }
 }
 
 export default App
