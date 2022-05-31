@@ -12,8 +12,6 @@ const getMessages = () => async (dispatch) => {
     .then(resp => resp.json())
     .then(json => json)
     .catch(error => console.log(error));
-  console.log('inside');
-  console.log(messages);
   dispatch({
     type: 'GET_THINGS_SUCCESS',
     payload: messages
@@ -21,10 +19,8 @@ const getMessages = () => async (dispatch) => {
 }
 
 function rootReducer(state, action) {
-  console.log(action.type);
   switch (action.type) {
     case 'GET_THINGS_SUCCESS':
-      // console.log(action.json.things);
       return { things: action.payload.things }
     default:
       return state
