@@ -12,7 +12,7 @@ function rootReducer(state, action) {
   }
 }
 
-export default configStore = () => {
+export default theStore = () => {
   const store = configStore(rootReducer, initialState);
   return store
 }
