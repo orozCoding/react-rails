@@ -28,6 +28,8 @@
     "config/**/*",
     "tmp/**/*",
     "vendor/**/*",
-    "test/**/*"
+    "test/**/*",
+    "postcss.config.js",
+    "babel.config.js"
   ]
 }
