@@ -2,16 +2,9 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-const initialState = {
-  things: [{
-    name: 'test',
-    guid: '123'
-  },
-  {
-    name: 'two',
-    guid: '222'
-  }]
-};
+const initialState = [{
+  things: []
+}];
 
 function rootReducer(state, action) {
   console.log(action.type);
